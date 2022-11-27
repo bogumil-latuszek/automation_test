@@ -2,7 +2,7 @@ name: main_workflow
 on: [push]
 run-name: running tests for ${{github.actor}}
 jobs:
-	automatic_testing:
-		runs-on: ubuntu-latest
-		steps: 
-			-ls -la
+  automatic_testing:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: ls -la
